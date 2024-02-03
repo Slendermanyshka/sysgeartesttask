@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 1</title>
+    <title>Task 2</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="../css/stylles.css">
 </head>
 <body>
     <a href="../index.html">Назад</a>
     <h1>Задание 2</h1>
     <h2>Сортировка выборка</h2>
-    <div id="prog_select"></div>
+    <form id="form">
+
+        <label for="jsonin">Write a json data input</label>
+        <input type="textarea" name="datain" id="datain"  value='{"data": [{"name": "John", "email": "john2@mail.com"}, {"name": "John", "email": "john1@mail.com"}, {"name": "Jane", "email": "jane@mail.com"}]}'>
+        <br>
+        <label for="condin">Write a json condition input</label>
+        <input type="textarea" name="condin" id="condin"  value='{"condition": {"include": [{"name": "John"}], "sortBy": ["email"]}}'>
+
+        <p id="resultarea"></p>
+        <button type="submit">Sort</button>
+        
+    </form>
+    <script>var exports = {};</script>
+    <script src="../js/prog_select.js"></script>
 </body>
 </html>

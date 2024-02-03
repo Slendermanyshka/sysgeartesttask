@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 1</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="../css/stylles.css">
 </head>
 <body>
     <a href="../index.html">Назад</a>
     <h1>Задание 1</h1>
     <h2>Конвертер длинны</h2>
-    <form id="prog_convert">
+    <form id="form">
 
-        <label for="text">Write a json input</label>
-        <input type="text" name="json_in" id="json_in">
+        <label for="jsonin">Write a json input</label>
+        <input type="textarea" name="jsonin" id="jsonin" width="200px" value='{"distance": {"unit": "m", "value": 0.5}, "convertTo": "ft"}'>
+        <p id="resultarea"></p>
         <button type="submit">Convert</button>
         
     </form>
+    <script>var exports = {};</script>
+    <script src="../js/prog_convert.js"></script>
+
 </body>
 </html>
