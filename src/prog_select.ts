@@ -12,18 +12,6 @@ function handleSubmit(event:SubmitEvent){
     const parsedData = formData.data as object[];
     const parsedCond = formData.condition  as object;
 
-
-/*
-    {"data": [
-        {"user": "mike@mail.com", "rating": 20, "disabled": false},
-        {"user": "greg@mail.com", "rating": 14, "disabled": false},
-        {"user": "john@mail.com", "rating": 25, "disabled": true}],
-
-     "condition": {"include": [{"disabled": true}],
-                   "sortBy": ["rating"]}
-    }
-*/
-
     let modifiedData = parsedData;
 
     for(const [key, value] of Object.entries(parsedCond)) {  
